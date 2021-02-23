@@ -9,7 +9,7 @@ def handler(event, context):
     '''
 
     dynamodb = boto3.resource('dynamodb')
-    table = dynamodb.Table('model_registry')
+    table = dynamodb.Table('wx_model_registry')
     
     today = datetime.datetime.now()
     dateAsString = today.strftime('%Y%m%d%H%M') 
